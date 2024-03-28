@@ -6,7 +6,7 @@
       <form>
         <input type="text" placeholder="Username/Email">
         <input type="password" placeholder="Password">
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" class="button">Login</button>
       </form>
       <router-link to="/signup">Don't have an account? Signup</router-link>
     </div>
@@ -20,35 +20,20 @@
   
   <style scoped>
   .login {
-    max-width: 400px;
+    max-inline-size: 400px;
     margin: 0 auto;
   }
   
   input {
     display: block;
-    width: 100%;
-    margin-bottom: 20px;
+    inline-size: 100%;
+    margin-block-end: 20px;
     padding: 10px;
-  }
-  
-  .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
   }
   
   a {
     display: block;
-    margin-top: 20px;
+    margin-block-start: 20px;
     text-align: center;
   }
   </style>
