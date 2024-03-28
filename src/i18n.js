@@ -3,21 +3,29 @@ import { createI18n } from 'vue-i18n';
 
 const messages = {
   en: {
-    message: {
-      hello: 'hello world'
-    }
+    login: 'Login',
+    usernameEmail: 'Username/Email',
+    password: 'Password',
+    dontHaveAccount: "Don't have an account? Signup"
   },
-  fr: {
-    message: {
-      hello: 'bonjour le monde'
-    }
+  de: {
+    login: 'Anmelden',
+    usernameEmail: 'Benutzername/E-Mail',
+    password: 'Passwort',
+    dontHaveAccount: 'Kein Konto? Registrieren'
+  },
+  lv: {
+    login: 'Pieteikties',
+    usernameEmail: 'Lietotājvārds/E-pasts',
+    password: 'Parole',
+    dontHaveAccount: 'Nav konta? Reģistrējieties'
   }
   // Add other languages here
 };
 
 const i18n = createI18n({
-  locale: 'en', // set locale
-  fallbackLocale: 'en', // set fallback locale
+  locale: 'en', // default locale
+  fallbackLocale: 'en', // fallback locale
   messages, // set locale messages
 });
 
